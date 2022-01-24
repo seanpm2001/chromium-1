@@ -5,7 +5,7 @@
  const base::Feature kTFLiteLanguageDetectionEnabled{
    "TFLiteLanguageDetectionEnabled",
 -#if defined(OS_LINUX) || defined(OS_CHROMEOS) || defined(OS_WIN) || \
-+#if defined(OS_LINUX) || defined(OS_CHROMEOS) || defined(OS_WIN) || defined(OS_BSD) \
++#if defined(OS_LINUX) || defined(OS_CHROMEOS) || defined(OS_WIN) || defined(OS_BSD) || \
      defined(OS_MAC)
        base::FEATURE_ENABLED_BY_DEFAULT
 -#else  // !defined(OS_LINUX) && !defined(OS_CHROMEOS) && !defined(OS_WIN) &&
