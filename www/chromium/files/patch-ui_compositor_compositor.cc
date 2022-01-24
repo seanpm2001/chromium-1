@@ -1,6 +1,6 @@
---- ui/compositor/compositor.cc.orig	2021-12-14 11:45:39 UTC
+--- ui/compositor/compositor.cc.orig	2021-12-31 00:58:32 UTC
 +++ ui/compositor/compositor.cc
-@@ -811,7 +811,7 @@ void Compositor::CancelThroughtputTracker(TrackerId tr
+@@ -836,7 +836,7 @@ void Compositor::OnResume() {
  
  // TODO(crbug.com/1052397): Revisit the macro expression once build flag switch
  // of lacros-chrome is complete.

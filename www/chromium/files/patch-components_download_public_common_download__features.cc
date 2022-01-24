@@ -1,6 +1,6 @@
---- components/download/public/common/download_features.cc.orig	2021-12-16 14:59:30 UTC
+--- components/download/public/common/download_features.cc.orig	2021-12-31 00:57:29 UTC
 +++ components/download/public/common/download_features.cc
-@@ -72,7 +72,7 @@ const base::Feature kDeleteOverwrittenDownloads{
+@@ -68,7 +68,7 @@ const base::Feature kDeleteOverwrittenDownloads{
  
  const base::Feature kAllowFileBufferSizeControl{
    "AllowFileBufferSizeControl",

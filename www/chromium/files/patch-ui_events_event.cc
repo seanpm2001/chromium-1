@@ -1,6 +1,6 @@
---- ui/events/event.cc.orig	2021-12-14 11:45:39 UTC
+--- ui/events/event.cc.orig	2021-12-31 00:58:32 UTC
 +++ ui/events/event.cc
-@@ -453,7 +453,7 @@ std::string LocatedEvent::ToString() const {
+@@ -452,7 +452,7 @@ std::string LocatedEvent::ToString() const {
  MouseEvent::MouseEvent(const PlatformEvent& native_event)
      : LocatedEvent(native_event),
        changed_button_flags_(GetChangedMouseButtonFlagsFromNative(native_event)),
@@ -9,7 +9,7 @@
        movement_(GetMouseMovementFromNative(native_event)),
  #endif
        pointer_details_(GetMousePointerDetailsFromNative(native_event)) {
-@@ -935,7 +935,7 @@ void KeyEvent::InitializeNative() {
+@@ -934,7 +934,7 @@ void KeyEvent::InitializeNative() {
    if (synthesize_key_repeat_enabled_ && IsRepeated(GetLastKeyEvent()))
      set_flags(flags() | EF_IS_REPEAT);
  

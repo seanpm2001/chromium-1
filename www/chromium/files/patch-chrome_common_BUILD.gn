@@ -1,6 +1,6 @@
---- chrome/common/BUILD.gn.orig	2021-12-14 11:45:00 UTC
+--- chrome/common/BUILD.gn.orig	2021-12-31 00:57:25 UTC
 +++ chrome/common/BUILD.gn
-@@ -328,7 +328,7 @@ static_library("common") {
+@@ -329,7 +329,7 @@ static_library("common") {
      ]
    }
  
@@ -9,7 +9,7 @@
      deps += [ "//components/crash/core/app" ]
    }
  
-@@ -491,13 +491,21 @@ static_library("common") {
+@@ -490,13 +490,21 @@ static_library("common") {
      public_deps += [ "//chrome/common/safe_browsing" ]
    }
  

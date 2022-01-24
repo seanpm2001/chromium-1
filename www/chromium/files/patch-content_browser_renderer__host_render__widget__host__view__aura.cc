@@ -1,6 +1,6 @@
---- content/browser/renderer_host/render_widget_host_view_aura.cc.orig	2021-12-14 11:45:05 UTC
+--- content/browser/renderer_host/render_widget_host_view_aura.cc.orig	2021-12-31 00:57:32 UTC
 +++ content/browser/renderer_host/render_widget_host_view_aura.cc
-@@ -111,7 +111,7 @@
+@@ -112,7 +112,7 @@
  #include "ui/gfx/gdi_util.h"
  #endif
  
@@ -9,7 +9,7 @@
  #include "content/browser/accessibility/browser_accessibility_auralinux.h"
  #include "ui/base/ime/linux/text_edit_command_auralinux.h"
  #include "ui/base/ime/linux/text_edit_key_bindings_delegate_auralinux.h"
-@@ -478,7 +478,7 @@ gfx::NativeViewAccessible RenderWidgetHostViewAura::Ge
+@@ -479,7 +479,7 @@ gfx::NativeViewAccessible RenderWidgetHostViewAura::Ge
    if (manager)
      return ToBrowserAccessibilityWin(manager->GetRoot())->GetCOM();
  
@@ -18,7 +18,7 @@
    BrowserAccessibilityManager* manager =
        host()->GetOrCreateRootBrowserAccessibilityManager();
    if (manager && manager->GetRoot())
-@@ -1516,7 +1516,7 @@ bool RenderWidgetHostViewAura::ShouldDoLearning() {
+@@ -1530,7 +1530,7 @@ bool RenderWidgetHostViewAura::ShouldDoLearning() {
    return GetTextInputManager() && GetTextInputManager()->should_do_learning();
  }
  

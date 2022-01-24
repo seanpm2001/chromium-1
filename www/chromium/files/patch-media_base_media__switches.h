@@ -1,6 +1,6 @@
---- media/base/media_switches.h.orig	2021-12-14 11:45:07 UTC
+--- media/base/media_switches.h.orig	2021-12-31 00:57:35 UTC
 +++ media/base/media_switches.h
-@@ -193,10 +193,10 @@ MEDIA_EXPORT extern const base::Feature kUseFakeDevice
+@@ -190,10 +190,10 @@ MEDIA_EXPORT extern const base::Feature kUseFakeDevice
  MEDIA_EXPORT extern const base::Feature kUseMediaHistoryStore;
  MEDIA_EXPORT extern const base::Feature kUseR16Texture;
  MEDIA_EXPORT extern const base::Feature kUseSodaForLiveCaption;

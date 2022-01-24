@@ -1,4 +1,4 @@
---- content/app/content_main_runner_impl.cc.orig	2021-12-14 11:45:05 UTC
+--- content/app/content_main_runner_impl.cc.orig	2021-12-31 00:57:31 UTC
 +++ content/app/content_main_runner_impl.cc
 @@ -137,7 +137,7 @@
  
@@ -18,7 +18,7 @@
  
  #if BUILDFLAG(USE_ZYGOTE_HANDLE)
  #include "base/stack_canary_linux.h"
-@@ -323,7 +323,7 @@ void InitializeZygoteSandboxForBrowserProcess(
+@@ -344,7 +344,7 @@ void InitializeZygoteSandboxForBrowserProcess(
  }
  #endif  // BUILDFLAG(USE_ZYGOTE_HANDLE)
  
@@ -27,7 +27,7 @@
  
  #if BUILDFLAG(ENABLE_PLUGINS)
  // Loads the (native) libraries but does not initialize them (i.e., does not
-@@ -411,7 +411,7 @@ void PreSandboxInit() {
+@@ -432,7 +432,7 @@ void PreSandboxInit() {
  }
  #endif  // BUILDFLAG(USE_ZYGOTE_HANDLE)
  
@@ -36,7 +36,7 @@
  
  mojo::ScopedMessagePipeHandle MaybeAcceptMojoInvitation() {
    const auto& command_line = *base::CommandLine::ForCurrentProcess();
-@@ -544,7 +544,7 @@ int NO_STACK_PROTECTOR RunZygote(ContentMainDelegate* 
+@@ -565,7 +565,7 @@ int NO_STACK_PROTECTOR RunZygote(ContentMainDelegate* 
    delegate->ZygoteStarting(&zygote_fork_delegates);
    media::InitializeMediaLibrary();
  
@@ -45,7 +45,7 @@
    PreSandboxInit();
  #endif
  
-@@ -955,7 +955,7 @@ int NO_STACK_PROTECTOR ContentMainRunnerImpl::Run(bool
+@@ -976,7 +976,7 @@ int NO_STACK_PROTECTOR ContentMainRunnerImpl::Run(bool
        mojo::core::InitFeatures();
      }
  
@@ -54,7 +54,7 @@
      // If dynamic Mojo Core is being used, ensure that it's loaded very early in
      // the child/zygote process, before any sandbox is initialized. The library
      // is not fully initialized with IPC support until a ChildProcess is later
-@@ -965,7 +965,7 @@ int NO_STACK_PROTECTOR ContentMainRunnerImpl::Run(bool
+@@ -986,7 +986,7 @@ int NO_STACK_PROTECTOR ContentMainRunnerImpl::Run(bool
        CHECK_EQ(mojo::LoadCoreLibrary(GetMojoCoreSharedLibraryPath()),
                 MOJO_RESULT_OK);
      }

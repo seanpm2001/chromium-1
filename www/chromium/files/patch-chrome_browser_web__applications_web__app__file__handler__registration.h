@@ -1,8 +1,8 @@
---- chrome/browser/web_applications/web_app_file_handler_registration.h.orig	2021-12-15 15:38:12 UTC
+--- chrome/browser/web_applications/web_app_file_handler_registration.h.orig	2021-12-31 00:57:25 UTC
 +++ chrome/browser/web_applications/web_app_file_handler_registration.h
-@@ -43,7 +43,7 @@ void UnregisterFileHandlersWithOs(const AppId& app_id,
+@@ -44,7 +44,7 @@ void UnregisterFileHandlersWithOs(const AppId& app_id,
                                    Profile* profile,
-                                   base::OnceCallback<void(bool)> callback);
+                                   ResultCallback callback);
  
 -#if defined(OS_LINUX)
 +#if defined(OS_LINUX) || defined(OS_BSD)

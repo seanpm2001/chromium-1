@@ -1,6 +1,6 @@
---- third_party/abseil-cpp/absl/debugging/internal/vdso_support.cc.orig	2021-12-17 10:32:03 UTC
+--- third_party/abseil-cpp/absl/debugging/internal/vdso_support.cc.orig	2021-12-31 00:57:39 UTC
 +++ third_party/abseil-cpp/absl/debugging/internal/vdso_support.cc
-@@ -96,7 +96,11 @@ const void *VDSOSupport::Init() {
+@@ -101,7 +101,11 @@ const void *VDSOSupport::Init() {
        getcpu_fn_.store(&GetCPUViaSyscall, std::memory_order_relaxed);
        return nullptr;
      }

@@ -1,4 +1,4 @@
---- components/feature_engagement/public/feature_configurations.cc.orig	2021-12-14 11:45:03 UTC
+--- components/feature_engagement/public/feature_configurations.cc.orig	2021-12-31 00:57:29 UTC
 +++ components/feature_engagement/public/feature_configurations.cc
 @@ -12,7 +12,7 @@ namespace feature_engagement {
  
@@ -9,8 +9,8 @@
      defined(OS_CHROMEOS)
    if (kIPHPasswordsAccountStorageFeature.name == feature->name) {
      absl::optional<FeatureConfig> config = FeatureConfig();
-@@ -66,7 +66,7 @@ absl::optional<FeatureConfig> GetClientSideFeatureConf
-                                Comparator(EQUAL, 0), 180, 180);
+@@ -87,7 +87,7 @@ absl::optional<FeatureConfig> GetClientSideFeatureConf
+                     Comparator(EQUAL, 0), 7, 360));
      return config;
    }
 -#endif  // defined(OS_WIN) || defined(OS_APPLE) || defined(OS_LINUX) ||

@@ -1,4 +1,4 @@
---- gpu/ipc/service/gpu_init.cc.orig	2021-12-14 11:45:06 UTC
+--- gpu/ipc/service/gpu_init.cc.orig	2021-12-31 00:57:34 UTC
 +++ gpu/ipc/service/gpu_init.cc
 @@ -123,7 +123,7 @@ void InitializePlatformOverlaySettings(GPUInfo* gpu_in
  }
@@ -117,7 +117,7 @@
  
    if (gl_use_swiftshader_) {
      AdjustInfoToSwiftShader();
-@@ -804,7 +804,7 @@ void GpuInit::InitializeInProcess(base::CommandLine* c
+@@ -810,7 +810,7 @@ void GpuInit::InitializeInProcess(base::CommandLine* c
  
    InitializePlatformOverlaySettings(&gpu_info_, gpu_feature_info_);
  
@@ -126,7 +126,7 @@
    // Driver may create a compatibility profile context when collect graphics
    // information on Linux platform. Try to collect graphics information
    // based on core profile context after disabling platform extensions.
-@@ -825,7 +825,7 @@ void GpuInit::InitializeInProcess(base::CommandLine* c
+@@ -831,7 +831,7 @@ void GpuInit::InitializeInProcess(base::CommandLine* c
        }
      }
    }

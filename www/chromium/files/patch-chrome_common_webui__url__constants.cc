@@ -1,4 +1,4 @@
---- chrome/common/webui_url_constants.cc.orig	2021-12-14 11:45:00 UTC
+--- chrome/common/webui_url_constants.cc.orig	2021-12-31 00:57:26 UTC
 +++ chrome/common/webui_url_constants.cc
 @@ -385,12 +385,12 @@ const char kChromeUIWebUIJsErrorHost[] = "webuijserror
  const char kChromeUIWebUIJsErrorURL[] = "chrome://webuijserror/";
@@ -42,7 +42,7 @@
      defined(USE_AURA)
  const char kChromeUITabModalConfirmDialogHost[] = "tab-modal-confirm-dialog";
  #endif
-@@ -617,18 +617,18 @@ const char* const kChromeHostURLs[] = {
+@@ -615,18 +615,18 @@ const char* const kChromeHostURLs[] = {
      kChromeUIInternetDetailDialogHost,
      kChromeUIAssistantOptInHost,
  #endif

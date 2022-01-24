@@ -1,4 +1,4 @@
---- chromecast/browser/cast_content_browser_client.cc.orig	2021-12-14 11:45:02 UTC
+--- chromecast/browser/cast_content_browser_client.cc.orig	2021-12-31 00:57:27 UTC
 +++ chromecast/browser/cast_content_browser_client.cc
 @@ -130,9 +130,9 @@
  #include "extensions/common/constants.h"                            // nogncheck
@@ -11,7 +11,7 @@
 +#endif  // (defined(OS_LINUX) || defined(OS_CHROMEOS) || defined(OS_BSD)) && defined(USE_OZONE)
  
  #if BUILDFLAG(ENABLE_CAST_RENDERER)
- #include "base/sequenced_task_runner.h"
+ #include "base/task/sequenced_task_runner.h"
 @@ -478,7 +478,7 @@ void CastContentBrowserClient::AppendExtraCommandLineS
                                            switches::kAudioOutputChannels));
      }

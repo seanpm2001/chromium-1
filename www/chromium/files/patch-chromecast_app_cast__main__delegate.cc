@@ -1,6 +1,6 @@
---- chromecast/app/cast_main_delegate.cc.orig	2021-12-14 11:45:02 UTC
+--- chromecast/app/cast_main_delegate.cc.orig	2021-12-31 00:57:27 UTC
 +++ chromecast/app/cast_main_delegate.cc
-@@ -137,7 +137,7 @@ bool CastMainDelegate::BasicStartupComplete(int* exit_
+@@ -162,7 +162,7 @@ bool CastMainDelegate::BasicStartupComplete(int* exit_
  
  void CastMainDelegate::PreSandboxStartup() {
  #if defined(ARCH_CPU_ARM_FAMILY) && \

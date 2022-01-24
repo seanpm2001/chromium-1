@@ -1,6 +1,6 @@
---- chrome/browser/ui/browser_dialogs.h.orig	2021-12-14 11:44:59 UTC
+--- chrome/browser/ui/browser_dialogs.h.orig	2021-12-31 00:57:25 UTC
 +++ chrome/browser/ui/browser_dialogs.h
-@@ -25,7 +25,7 @@
+@@ -27,7 +27,7 @@
  #include "ui/gfx/native_widget_types.h"
  
  #if defined(OS_WIN) || defined(OS_MAC) || \
@@ -9,7 +9,7 @@
  #include "chrome/browser/web_applications/web_app_id.h"
  #endif
  
-@@ -79,7 +79,7 @@ struct SelectedFileInfo;
+@@ -81,7 +81,7 @@ struct SelectedFileInfo;
  }  // namespace ui
  
  #if defined(OS_WIN) || defined(OS_MAC) || \
@@ -18,7 +18,7 @@
  namespace web_app {
  struct UrlHandlerLaunchParams;
  }
-@@ -188,7 +188,7 @@ void ShowWebAppProtocolHandlerIntentPicker(
+@@ -208,7 +208,7 @@ void ShowWebAppFileLaunchDialog(const std::vector<base
  #endif  // !defined(OS_ANDROID)
  
  #if defined(OS_WIN) || defined(OS_MAC) || \

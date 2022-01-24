@@ -1,6 +1,6 @@
---- chrome/browser/profiles/chrome_browser_main_extra_parts_profiles.cc.orig	2021-12-14 11:44:58 UTC
+--- chrome/browser/profiles/chrome_browser_main_extra_parts_profiles.cc.orig	2021-12-31 00:57:23 UTC
 +++ chrome/browser/profiles/chrome_browser_main_extra_parts_profiles.cc
-@@ -375,7 +375,7 @@ void ChromeBrowserMainExtraPartsProfiles::
+@@ -376,7 +376,7 @@ void ChromeBrowserMainExtraPartsProfiles::
  // TODO(crbug.com/1052397): Revisit the macro expression once build flag switch
  // of lacros-chrome is complete.
  #if defined(OS_WIN) || defined(OS_MAC) || \

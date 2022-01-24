@@ -1,6 +1,6 @@
---- chrome/app/google_chrome_strings.grd.orig	2021-12-14 11:44:56 UTC
+--- chrome/app/google_chrome_strings.grd.orig	2021-12-31 00:57:19 UTC
 +++ chrome/app/google_chrome_strings.grd
-@@ -738,7 +738,7 @@ Google Chrome is unable to recover your settings.
+@@ -810,7 +810,7 @@ Google Chrome is unable to recover your settings.
        </if>
  
        <!-- about:browser-switch strings -->
@@ -9,7 +9,7 @@
          <message name="IDS_ABOUT_BROWSER_SWITCH_DESCRIPTION_UNKNOWN_BROWSER" desc="Description shown while waiting for an alternative browser to open, when the browser name is not auto-detected">
            Your system administrator has configured Google Chrome to open an alternative browser to access <ph name="TARGET_URL_HOSTNAME">$1<ex>example.com</ex></ph>.
          </message>
-@@ -862,7 +862,7 @@ Google Chrome is unable to recover your settings.
+@@ -934,7 +934,7 @@ Google Chrome is unable to recover your settings.
        </message>
  
        <!-- ProcessSingleton -->

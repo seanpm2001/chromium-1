@@ -1,4 +1,4 @@
---- chrome/browser/ui/webui/settings/settings_ui.cc.orig	2021-12-14 11:45:00 UTC
+--- chrome/browser/ui/webui/settings/settings_ui.cc.orig	2021-12-31 00:57:25 UTC
 +++ chrome/browser/ui/webui/settings/settings_ui.cc
 @@ -138,7 +138,7 @@
  #endif  // defined(USE_NSS_CERTS)
@@ -9,7 +9,7 @@
  #include "chrome/browser/ui/webui/settings/url_handlers_handler.h"
  #endif
  
-@@ -243,7 +243,7 @@ SettingsUI::SettingsUI(content::WebUI* web_ui)
+@@ -239,7 +239,7 @@ SettingsUI::SettingsUI(content::WebUI* web_ui)
  #endif  // defined(OS_WIN)
  
  #if defined(OS_WIN) || defined(OS_MAC) || \

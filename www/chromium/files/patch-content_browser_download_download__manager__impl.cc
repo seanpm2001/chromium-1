@@ -1,6 +1,6 @@
---- content/browser/download/download_manager_impl.cc.orig	2021-12-14 11:45:05 UTC
+--- content/browser/download/download_manager_impl.cc.orig	2021-12-31 00:57:32 UTC
 +++ content/browser/download/download_manager_impl.cc
-@@ -83,7 +83,7 @@
+@@ -85,7 +85,7 @@
  #include "third_party/blink/public/common/loader/referrer_utils.h"
  #include "third_party/blink/public/common/loader/throttling_url_loader.h"
  
@@ -9,7 +9,7 @@
  #include "base/nix/xdg_util.h"
  #endif
  
-@@ -229,7 +229,7 @@ class DownloadItemFactoryImpl : public download::Downl
+@@ -231,7 +231,7 @@ class DownloadItemFactoryImpl : public download::Downl
    }
  };
  
@@ -18,7 +18,7 @@
  base::FilePath GetTemporaryDownloadDirectory() {
    std::unique_ptr<base::Environment> env(base::Environment::Create());
    return base::nix::GetXDGDirectory(env.get(), "XDG_DATA_HOME", ".local/share");
-@@ -569,7 +569,7 @@ bool DownloadManagerImpl::InterceptDownload(
+@@ -585,7 +585,7 @@ bool DownloadManagerImpl::InterceptDownload(
  
  base::FilePath DownloadManagerImpl::GetDefaultDownloadDirectory() {
    base::FilePath default_download_directory;

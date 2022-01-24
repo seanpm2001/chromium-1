@@ -1,4 +1,4 @@
---- chrome/browser/chrome_browser_main_linux.cc.orig	2021-12-14 11:44:57 UTC
+--- chrome/browser/chrome_browser_main_linux.cc.orig	2021-12-31 00:57:22 UTC
 +++ chrome/browser/chrome_browser_main_linux.cc
 @@ -30,7 +30,7 @@
  #include "chrome/installer/util/google_update_settings.h"
@@ -18,7 +18,7 @@
    // Needs to be called after we have chrome::DIR_USER_DATA and
    // g_browser_process.  This happens in PreCreateThreads.
    // base::GetLinuxDistro() will initialize its value if needed.
-@@ -84,14 +84,14 @@ void ChromeBrowserMainPartsLinux::PreProfileInit() {
+@@ -82,14 +82,14 @@ void ChromeBrowserMainPartsLinux::PreProfileInit() {
  }
  
  void ChromeBrowserMainPartsLinux::PostCreateMainMessageLoop() {
@@ -35,7 +35,7 @@
  void ChromeBrowserMainPartsLinux::PostBrowserStart() {
    // static_cast is safe because this is the only implementation of
    // MemoryPressureMonitor.
-@@ -110,7 +110,7 @@ void ChromeBrowserMainPartsLinux::PostBrowserStart() {
+@@ -108,7 +108,7 @@ void ChromeBrowserMainPartsLinux::PostBrowserStart() {
  #endif
  
  void ChromeBrowserMainPartsLinux::PostDestroyThreads() {

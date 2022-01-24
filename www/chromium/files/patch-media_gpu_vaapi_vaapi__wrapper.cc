@@ -1,6 +1,6 @@
---- media/gpu/vaapi/vaapi_wrapper.cc.orig	2021-12-16 15:13:01 UTC
+--- media/gpu/vaapi/vaapi_wrapper.cc.orig	2021-12-31 00:57:35 UTC
 +++ media/gpu/vaapi/vaapi_wrapper.cc
-@@ -559,7 +559,7 @@ VADisplayState::VADisplayState()
+@@ -554,7 +554,7 @@ VADisplayState::VADisplayState()
  bool VADisplayState::Initialize() {
    base::AutoLock auto_lock(va_lock_);
  

@@ -1,6 +1,6 @@
---- net/url_request/url_request_context.cc.orig	2021-12-14 11:45:09 UTC
+--- net/url_request/url_request_context.cc.orig	2021-12-31 00:57:37 UTC
 +++ net/url_request/url_request_context.cc
-@@ -86,7 +86,7 @@ const HttpNetworkSessionContext* URLRequestContext::Ge
+@@ -87,7 +87,7 @@ const HttpNetworkSessionContext* URLRequestContext::Ge
  
  // TODO(crbug.com/1052397): Revisit once build flag switch of lacros-chrome is
  // complete.

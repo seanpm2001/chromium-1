@@ -1,6 +1,6 @@
---- ui/views/controls/textfield/textfield.cc.orig	2021-12-14 11:45:40 UTC
+--- ui/views/controls/textfield/textfield.cc.orig	2021-12-31 00:58:32 UTC
 +++ ui/views/controls/textfield/textfield.cc
-@@ -72,7 +72,7 @@
+@@ -73,7 +73,7 @@
  
  // TODO(crbug.com/1052397): Revisit the macro expression once build flag switch
  // of lacros-chrome is complete.
@@ -9,7 +9,7 @@
  #include "ui/base/ime/linux/text_edit_command_auralinux.h"
  #include "ui/base/ime/linux/text_edit_key_bindings_delegate_auralinux.h"
  #endif
-@@ -165,7 +165,7 @@ bool IsControlKeyModifier(int flags) {
+@@ -166,7 +166,7 @@ bool IsControlKeyModifier(int flags) {
  // Control-modified key combination, but we cannot extend it to other platforms
  // as Control has different meanings and behaviors.
  // https://crrev.com/2580483002/#msg46
@@ -18,7 +18,7 @@
    return flags & ui::EF_CONTROL_DOWN;
  #else
    return false;
-@@ -712,7 +712,7 @@ bool Textfield::OnKeyPressed(const ui::KeyEvent& event
+@@ -713,7 +713,7 @@ bool Textfield::OnKeyPressed(const ui::KeyEvent& event
  
  // TODO(crbug.com/1052397): Revisit the macro expression once build flag switch
  // of lacros-chrome is complete.
@@ -27,7 +27,7 @@
    ui::TextEditKeyBindingsDelegateAuraLinux* delegate =
        ui::GetTextEditKeyBindingsDelegate();
    std::vector<ui::TextEditCommandAuraLinux> commands;
-@@ -858,7 +858,7 @@ void Textfield::AboutToRequestFocusFromTabTraversal(bo
+@@ -859,7 +859,7 @@ void Textfield::AboutToRequestFocusFromTabTraversal(bo
  bool Textfield::SkipDefaultKeyEventProcessing(const ui::KeyEvent& event) {
  // TODO(crbug.com/1052397): Revisit the macro expression once build flag switch
  // of lacros-chrome is complete.
@@ -36,7 +36,7 @@
    // Skip any accelerator handling that conflicts with custom keybindings.
    ui::TextEditKeyBindingsDelegateAuraLinux* delegate =
        ui::GetTextEditKeyBindingsDelegate();
-@@ -1721,7 +1721,7 @@ bool Textfield::ShouldDoLearning() {
+@@ -1722,7 +1722,7 @@ bool Textfield::ShouldDoLearning() {
    return false;
  }
  
@@ -45,7 +45,7 @@
  // TODO(https://crbug.com/952355): Implement this method to support Korean IME
  // reconversion feature on native text fields (e.g. find bar).
  bool Textfield::SetCompositionFromExistingText(
-@@ -2221,14 +2221,14 @@ ui::TextEditCommand Textfield::GetCommandForKeyEvent(
+@@ -2222,14 +2222,14 @@ ui::TextEditCommand Textfield::GetCommandForKeyEvent(
  #endif
          return ui::TextEditCommand::DELETE_BACKWARD;
        }

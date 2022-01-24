@@ -1,6 +1,6 @@
---- chrome/browser/metrics/chrome_metrics_service_client.cc.orig	2021-12-14 11:44:58 UTC
+--- chrome/browser/metrics/chrome_metrics_service_client.cc.orig	2021-12-31 00:57:23 UTC
 +++ chrome/browser/metrics/chrome_metrics_service_client.cc
-@@ -743,10 +743,10 @@ void ChromeMetricsServiceClient::RegisterMetricsServic
+@@ -742,10 +742,10 @@ void ChromeMetricsServiceClient::RegisterMetricsServic
  // TODO(crbug.com/1052397): Revisit the macro expression once build flag switch
  // of lacros-chrome is complete.
  #if defined(OS_WIN) || defined(OS_MAC) || \
@@ -13,7 +13,7 @@
          // BUILDFLAG(IS_CHROMEOS_LACROS))
  
  #if BUILDFLAG(ENABLE_PLUGINS)
-@@ -841,10 +841,10 @@ void ChromeMetricsServiceClient::RegisterMetricsServic
+@@ -837,10 +837,10 @@ void ChromeMetricsServiceClient::RegisterMetricsServic
        std::make_unique<PowerMetricsProvider>());
  #endif
  
@@ -26,7 +26,7 @@
  }
  
  void ChromeMetricsServiceClient::RegisterUKMProviders() {
-@@ -1018,7 +1018,7 @@ bool ChromeMetricsServiceClient::RegisterForProfileEve
+@@ -1014,7 +1014,7 @@ bool ChromeMetricsServiceClient::RegisterForProfileEve
  // TODO(crbug.com/1052397): Revisit the macro expression once build flag switch
  // of lacros-chrome is complete.
  #if defined(OS_WIN) || defined(OS_MAC) || \

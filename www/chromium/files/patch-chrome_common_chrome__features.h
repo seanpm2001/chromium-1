@@ -1,6 +1,6 @@
---- chrome/common/chrome_features.h.orig	2021-12-14 11:45:00 UTC
+--- chrome/common/chrome_features.h.orig	2021-12-31 00:57:25 UTC
 +++ chrome/common/chrome_features.h
-@@ -77,7 +77,7 @@ extern const base::Feature kAppShimNewCloseBehavior;
+@@ -84,7 +84,7 @@ extern const base::Feature kAppShimNewCloseBehavior;
  
  COMPONENT_EXPORT(CHROME_FEATURES) extern const base::Feature kAsyncDns;
  
@@ -9,7 +9,7 @@
      defined(OS_CHROMEOS) || defined(OS_FUCHSIA)
  COMPONENT_EXPORT(CHROME_FEATURES)
  extern const base::Feature kAutofillAddressSurvey;
-@@ -87,10 +87,10 @@ COMPONENT_EXPORT(CHROME_FEATURES)
+@@ -94,10 +94,10 @@ COMPONENT_EXPORT(CHROME_FEATURES)
  extern const base::Feature kAutofillPasswordSurvey;
  #endif
  
@@ -22,7 +22,7 @@
  
  #if BUILDFLAG(IS_CHROMEOS_ASH)
  COMPONENT_EXPORT(CHROME_FEATURES) extern const base::Feature kBorealis;
-@@ -104,7 +104,7 @@ extern const base::Feature kBrowserAppInstanceTracking
+@@ -111,7 +111,7 @@ extern const base::Feature kBrowserAppInstanceTracking
  COMPONENT_EXPORT(CHROME_FEATURES)
  extern const base::Feature kChangePictureVideoMode;
  
@@ -31,7 +31,7 @@
  COMPONENT_EXPORT(CHROME_FEATURES)
  extern const base::Feature kChromeAppsDeprecation;
  #endif
-@@ -168,7 +168,7 @@ COMPONENT_EXPORT(CHROME_FEATURES)
+@@ -175,7 +175,7 @@ COMPONENT_EXPORT(CHROME_FEATURES)
  extern const base::Feature kDefaultPinnedAppsUpdate2021Q2;
  #endif
  
@@ -40,7 +40,7 @@
  COMPONENT_EXPORT(CHROME_FEATURES)
  extern const base::Feature kDesktopPWAsAppIconShortcutsMenuUI;
  #endif
-@@ -390,7 +390,7 @@ extern const base::Feature kIncognitoBrandConsistencyF
+@@ -410,7 +410,7 @@ extern const base::Feature kIncognitoBrandConsistencyF
  COMPONENT_EXPORT(CHROME_FEATURES)
  extern const base::Feature kIncognitoNtpRevamp;
  

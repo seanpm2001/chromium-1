@@ -1,6 +1,6 @@
---- chrome/browser/policy/configuration_policy_handler_list_factory.cc.orig	2021-12-14 11:44:58 UTC
+--- chrome/browser/policy/configuration_policy_handler_list_factory.cc.orig	2021-12-31 00:57:23 UTC
 +++ chrome/browser/policy/configuration_policy_handler_list_factory.cc
-@@ -1399,11 +1399,11 @@ const PolicyToPreferenceMapEntry kSimplePolicyMap[] = 
+@@ -1416,11 +1416,11 @@ const PolicyToPreferenceMapEntry kSimplePolicyMap[] = 
      base::Value::Type::BOOLEAN },
  #endif // !defined(OS_MAC) && !defined(OS_CHROMEOS)
  
@@ -14,7 +14,7 @@
  
  #if !defined(OS_MAC)
    { key::kFullscreenAllowed,
-@@ -1517,7 +1517,7 @@ const PolicyToPreferenceMapEntry kSimplePolicyMap[] = 
+@@ -1531,7 +1531,7 @@ const PolicyToPreferenceMapEntry kSimplePolicyMap[] = 
      base::Value::Type::INTEGER },
  #endif
  
@@ -23,7 +23,7 @@
    { key::kChromeAppsEnabled,
      extensions::pref_names::kChromeAppsEnabled,
      base::Value::Type::BOOLEAN },
-@@ -1780,7 +1780,7 @@ std::unique_ptr<ConfigurationPolicyHandlerList> BuildH
+@@ -1801,7 +1801,7 @@ std::unique_ptr<ConfigurationPolicyHandlerList> BuildH
        SimpleSchemaValidatingPolicyHandler::MANDATORY_ALLOWED));
  #endif  // defined(OS_ANDROID)
  
@@ -32,7 +32,7 @@
      defined(OS_CHROMEOS) || defined(OS_FUCHSIA)
    handlers->AddHandler(
        std::make_unique<
-@@ -1788,7 +1788,7 @@ std::unique_ptr<ConfigurationPolicyHandlerList> BuildH
+@@ -1809,7 +1809,7 @@ std::unique_ptr<ConfigurationPolicyHandlerList> BuildH
            key::kContextAwareAccessSignalsAllowlist,
            enterprise_connectors::kContextAwareAccessSignalsAllowlistPref,
            chrome_schema));
@@ -41,7 +41,7 @@
          // defined(OS_CHROMEOS) || defined(OS_FUCHSIA)
  
  #if defined(OS_CHROMEOS)
-@@ -2145,14 +2145,14 @@ std::unique_ptr<ConfigurationPolicyHandlerList> BuildH
+@@ -2166,14 +2166,14 @@ std::unique_ptr<ConfigurationPolicyHandlerList> BuildH
        SimpleSchemaValidatingPolicyHandler::RECOMMENDED_PROHIBITED,
        SimpleSchemaValidatingPolicyHandler::MANDATORY_ALLOWED));
  
@@ -58,7 +58,7 @@
          // defined(OS_FUCHSIA)
  
  #endif  // BUILDFLAG(ENABLE_EXTENSIONS)
-@@ -2177,7 +2177,7 @@ std::unique_ptr<ConfigurationPolicyHandlerList> BuildH
+@@ -2198,7 +2198,7 @@ std::unique_ptr<ConfigurationPolicyHandlerList> BuildH
            policy::key::kSpellcheckLanguageBlocklist));
  #endif  // BUILDFLAG(ENABLE_SPELLCHECK)
  
@@ -67,7 +67,7 @@
    handlers->AddHandler(std::make_unique<SimpleDeprecatingPolicyHandler>(
        std::make_unique<SimplePolicyHandler>(key::kAllowNativeNotifications,
                                              prefs::kAllowNativeNotifications,
-@@ -2185,7 +2185,7 @@ std::unique_ptr<ConfigurationPolicyHandlerList> BuildH
+@@ -2206,7 +2206,7 @@ std::unique_ptr<ConfigurationPolicyHandlerList> BuildH
        std::make_unique<SimplePolicyHandler>(key::kAllowSystemNotifications,
                                              prefs::kAllowSystemNotifications,
                                              base::Value::Type::BOOLEAN)));

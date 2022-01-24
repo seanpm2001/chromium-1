@@ -1,6 +1,6 @@
---- chrome/browser/renderer_context_menu/render_view_context_menu.cc.orig	2021-12-14 11:44:58 UTC
+--- chrome/browser/renderer_context_menu/render_view_context_menu.cc.orig	2021-12-31 00:57:23 UTC
 +++ chrome/browser/renderer_context_menu/render_view_context_menu.cc
-@@ -2386,7 +2386,7 @@ bool RenderViewContextMenu::IsCommandIdEnabled(int id)
+@@ -2399,7 +2399,7 @@ bool RenderViewContextMenu::IsCommandIdEnabled(int id)
      case IDC_CHECK_SPELLING_WHILE_TYPING:
        return prefs->GetBoolean(spellcheck::prefs::kSpellCheckEnable);
  

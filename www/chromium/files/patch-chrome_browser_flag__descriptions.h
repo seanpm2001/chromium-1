@@ -1,4 +1,4 @@
---- chrome/browser/flag_descriptions.h.orig	2021-12-14 11:44:58 UTC
+--- chrome/browser/flag_descriptions.h.orig	2022-01-20 10:35:49 UTC
 +++ chrome/browser/flag_descriptions.h
 @@ -22,9 +22,9 @@
  #include "printing/buildflags/buildflags.h"
@@ -12,7 +12,7 @@
  
  // This file declares strings used in chrome://flags. These messages are not
  // translated, because instead of end-users they target Chromium developers and
-@@ -3043,7 +3043,7 @@ extern const char kDownloadShelfWebUIDescription[];
+@@ -3045,7 +3045,7 @@ extern const char kDownloadShelfWebUIDescription[];
  
  // Random platform combinations -----------------------------------------------
  
@@ -21,7 +21,7 @@
      defined(OS_CHROMEOS) || defined(OS_FUCHSIA)
  
  extern const char kWebUIBrandingUpdateName[];
-@@ -3055,10 +3055,10 @@ extern const char kWebuiFeedbackDescription[];
+@@ -3057,10 +3057,10 @@ extern const char kWebuiFeedbackDescription[];
  extern const char kSettingsLandingPageRedesignName[];
  extern const char kSettingsLandingPageRedesignDescription[];
  
@@ -34,7 +34,7 @@
  
  extern const char kCommanderName[];
  extern const char kCommanderDescription[];
-@@ -3069,7 +3069,7 @@ extern const char kDesktopRestructuredLanguageSettings
+@@ -3071,7 +3071,7 @@ extern const char kDesktopRestructuredLanguageSettings
  extern const char kDesktopDetailedLanguageSettingsName[];
  extern const char kDesktopDetailedLanguageSettingsDescription[];
  
@@ -43,7 +43,16 @@
  
  #if defined(OS_CHROMEOS) || defined(OS_LINUX)
  #if BUILDFLAG(USE_TCMALLOC)
-@@ -3158,7 +3158,7 @@ extern const char kElasticOverscrollName[];
+@@ -3090,7 +3090,7 @@ extern const char kWebShareName[];
+ extern const char kWebShareDescription[];
+ #endif  // defined(OS_WIN) || defined(OS_CHROMEOS) || defined(OS_MAC)
+ 
+-#if defined(OS_LINUX)
++#if defined(OS_LINUX) || defined(OS_BSD)
+ extern const char kOzonePlatformHintChoiceDefault[];
+ extern const char kOzonePlatformHintChoiceAuto[];
+ extern const char kOzonePlatformHintChoiceX11[];
+@@ -3171,7 +3171,7 @@ extern const char kElasticOverscrollName[];
  extern const char kElasticOverscrollDescription[];
  #endif  // defined(OS_WIN) || defined(OS_ANDROID)
  

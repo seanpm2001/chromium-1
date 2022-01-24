@@ -1,4 +1,4 @@
---- third_party/abseil-cpp/absl/debugging/internal/elf_mem_image.h.orig	2021-12-17 10:23:06 UTC
+--- third_party/abseil-cpp/absl/debugging/internal/elf_mem_image.h.orig	2021-12-31 00:57:39 UTC
 +++ third_party/abseil-cpp/absl/debugging/internal/elf_mem_image.h
 @@ -38,7 +38,14 @@
  
@@ -13,5 +13,5 @@
  #include <link.h>  // for ElfW
 +#endif
  
- namespace absl {
- ABSL_NAMESPACE_BEGIN
+ #if defined(__FreeBSD__) && !defined(ElfW)
+ #define ElfW(x) __ElfN(x)

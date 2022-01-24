@@ -1,6 +1,6 @@
---- chrome/browser/web_applications/web_app_shortcut.h.orig	2021-12-15 15:38:58 UTC
+--- chrome/browser/web_applications/web_app_shortcut.h.orig	2021-12-31 00:57:25 UTC
 +++ chrome/browser/web_applications/web_app_shortcut.h
-@@ -18,9 +18,9 @@
+@@ -19,9 +19,9 @@
  #include "ui/gfx/image/image_family.h"
  #include "url/gurl.h"
  
@@ -12,7 +12,7 @@
  
  namespace base {
  class TaskRunner;
-@@ -46,7 +46,7 @@ struct ScopedShortcutOverrideForTesting {
+@@ -47,7 +47,7 @@ struct ScopedShortcutOverrideForTesting {
    base::ScopedTempDir startup;
  #elif defined(OS_MAC)
    base::ScopedTempDir chrome_apps_folder;
@@ -21,7 +21,7 @@
    base::ScopedTempDir desktop;
  #endif
  };
-@@ -88,9 +88,9 @@ struct ShortcutInfo {
+@@ -89,9 +89,9 @@ struct ShortcutInfo {
    std::set<std::string> file_handler_extensions;
    std::set<std::string> file_handler_mime_types;
    std::set<std::string> protocol_handlers;

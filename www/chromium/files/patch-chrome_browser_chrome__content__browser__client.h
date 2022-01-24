@@ -1,6 +1,6 @@
---- chrome/browser/chrome_content_browser_client.h.orig	2021-12-14 11:44:57 UTC
+--- chrome/browser/chrome_content_browser_client.h.orig	2021-12-31 00:57:22 UTC
 +++ chrome/browser/chrome_content_browser_client.h
-@@ -410,12 +410,12 @@ class ChromeContentBrowserClient : public content::Con
+@@ -405,12 +405,12 @@ class ChromeContentBrowserClient : public content::Con
    void OverridePageVisibilityState(
        content::RenderFrameHost* render_frame_host,
        content::PageVisibilityState* visibility_state) override;
@@ -14,4 +14,4 @@
 +#endif  // defined(OS_POSIX) && !defined(OS_MAC) && !defined(OS_BSD)
  #if defined(OS_WIN)
    bool PreSpawnChild(sandbox::TargetPolicy* policy,
-                      sandbox::policy::SandboxType sandbox_type,
+                      sandbox::mojom::Sandbox sandbox_type,

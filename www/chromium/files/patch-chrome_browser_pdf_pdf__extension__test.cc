@@ -1,6 +1,6 @@
---- chrome/browser/pdf/pdf_extension_test.cc.orig	2021-12-14 11:44:58 UTC
+--- chrome/browser/pdf/pdf_extension_test.cc.orig	2021-12-31 00:57:23 UTC
 +++ chrome/browser/pdf/pdf_extension_test.cc
-@@ -899,11 +899,11 @@ IN_PROC_BROWSER_TEST_P(PDFPluginDisabledTest, DirectNa
+@@ -920,11 +920,11 @@ IN_PROC_BROWSER_TEST_P(PDFPluginDisabledTest, DirectNa
  }
  
  // TODO(crbug.com/1201401): fix flakiness and reenable
@@ -14,7 +14,7 @@
  IN_PROC_BROWSER_TEST_P(PDFPluginDisabledTest,
                         MAYBE_EmbedPdfPlaceholderWithCSP) {
    // Navigate to a page with CSP that uses <embed> to embed a PDF as a plugin.
-@@ -2692,7 +2692,7 @@ IN_PROC_BROWSER_TEST_P(PDFExtensionClipboardTest,
+@@ -3004,7 +3004,7 @@ IN_PROC_BROWSER_TEST_P(PDFExtensionClipboardTest,
  }
  
  // Flaky on Linux (https://crbug.com/1121446)

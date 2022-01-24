@@ -1,6 +1,6 @@
---- chrome/browser/BUILD.gn.orig	2021-12-14 11:44:57 UTC
+--- chrome/browser/BUILD.gn.orig	2021-12-31 00:57:21 UTC
 +++ chrome/browser/BUILD.gn
-@@ -2507,9 +2507,18 @@ static_library("browser") {
+@@ -2520,9 +2520,18 @@ static_library("browser") {
        "policy/messaging_layer/util/heartbeat_event_factory.h",
      ]
    }
@@ -20,7 +20,7 @@
    if (use_ozone) {
      deps += [
        "//ui/events/ozone",
-@@ -5619,7 +5628,7 @@ static_library("browser") {
+@@ -5702,7 +5711,7 @@ static_library("browser") {
      }
    }
  
@@ -29,7 +29,7 @@
      sources += [
        "dbus_memory_pressure_evaluator_linux.cc",
        "dbus_memory_pressure_evaluator_linux.h",
-@@ -5718,6 +5727,17 @@ static_library("browser") {
+@@ -5801,6 +5810,17 @@ static_library("browser") {
      ]
    }
  
@@ -47,7 +47,7 @@
    if (is_posix) {
      sources += [
        "shutdown_signal_handlers_posix.cc",
-@@ -5883,7 +5903,7 @@ static_library("browser") {
+@@ -5966,7 +5986,7 @@ static_library("browser") {
      deps += [ "//chromeos/ui/base" ]
    }
  

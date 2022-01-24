@@ -1,4 +1,4 @@
---- third_party/blink/renderer/platform/fonts/font_cache.h.orig	2021-12-14 11:45:12 UTC
+--- third_party/blink/renderer/platform/fonts/font_cache.h.orig	2021-12-31 00:57:42 UTC
 +++ third_party/blink/renderer/platform/fonts/font_cache.h
 @@ -59,7 +59,7 @@
  #include "third_party/skia/include/core/SkFontMgr.h"
@@ -9,16 +9,16 @@
  #include "ui/gfx/font_fallback_linux.h"
  #endif
  
-@@ -178,7 +178,7 @@ class PLATFORM_EXPORT FontCache {
-   sk_sp<SkFontMgr> FontManager() { return font_manager_; }
-   static void SetFontManager(sk_sp<SkFontMgr>);
+@@ -192,7 +192,7 @@ class PLATFORM_EXPORT FontCache {
+   static void PrewarmFamily(const AtomicString& family_name) {}
+ #endif
  
 -#if defined(OS_LINUX) || defined(OS_CHROMEOS)
 +#if defined(OS_LINUX) || defined(OS_CHROMEOS) || defined(OS_BSD)
    // These are needed for calling QueryRenderStyleForStrike, since
    // gfx::GetFontRenderParams makes distinctions based on DSF.
    static float DeviceScaleFactor() { return device_scale_factor_; }
-@@ -260,11 +260,11 @@ class PLATFORM_EXPORT FontCache {
+@@ -274,11 +274,11 @@ class PLATFORM_EXPORT FontCache {
        const char* locale_family_name);
  #endif  // defined(OS_ANDROID)
  
@@ -32,7 +32,7 @@
  
    scoped_refptr<SimpleFontData> FontDataFromFontPlatformData(
        const FontPlatformData*,
-@@ -340,13 +340,13 @@ class PLATFORM_EXPORT FontCache {
+@@ -354,13 +354,13 @@ class PLATFORM_EXPORT FontCache {
                                     const FontFaceCreationParams&,
                                     std::string& name);
  
@@ -48,7 +48,7 @@
  
    scoped_refptr<SimpleFontData> FallbackOnStandardFontStyle(
        const FontDescription&,
-@@ -386,7 +386,7 @@ class PLATFORM_EXPORT FontCache {
+@@ -401,7 +401,7 @@ class PLATFORM_EXPORT FontCache {
    std::unique_ptr<FallbackFamilyStyleCache> fallback_params_cache_;
  #endif  // defined(OS_WIN)
  

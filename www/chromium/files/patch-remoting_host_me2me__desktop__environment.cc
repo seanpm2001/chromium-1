@@ -1,6 +1,6 @@
---- remoting/host/me2me_desktop_environment.cc.orig	2021-12-14 11:45:09 UTC
+--- remoting/host/me2me_desktop_environment.cc.orig	2021-12-31 00:57:37 UTC
 +++ remoting/host/me2me_desktop_environment.cc
-@@ -138,7 +138,7 @@ bool Me2MeDesktopEnvironment::InitializeSecurity(
+@@ -143,7 +143,7 @@ bool Me2MeDesktopEnvironment::InitializeSecurity(
  
    // Otherwise, if the session is shared with the local user start monitoring
    // the local input and create the in-session UI.
