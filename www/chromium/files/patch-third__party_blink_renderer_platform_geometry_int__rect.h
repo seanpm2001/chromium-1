@@ -5,12 +5,12 @@
  }
  
 -constexpr bool operator==(const IntRect& a, const IntRect& b) {
-+bool operator==(const IntRect& a, const IntRect& b) {
++inline bool operator==(const IntRect& a, const IntRect& b) {
    return a.origin() == b.origin() && a.size() == b.size();
  }
  
 -constexpr bool operator!=(const IntRect& a, const IntRect& b) {
-+bool operator!=(const IntRect& a, const IntRect& b) {
++inline bool operator!=(const IntRect& a, const IntRect& b) {
    return !(a == b);
  }
  

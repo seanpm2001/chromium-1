@@ -5,12 +5,12 @@
  }
  
 -constexpr double RoundHalfTowardsPositiveInfinity(double value) {
-+double RoundHalfTowardsPositiveInfinity(double value) {
++inline double RoundHalfTowardsPositiveInfinity(double value) {
    return std::floor(value + 0.5);
  }
  
 -constexpr float RoundHalfTowardsPositiveInfinity(float value) {
-+float RoundHalfTowardsPositiveInfinity(float value) {
++inline float RoundHalfTowardsPositiveInfinity(float value) {
    return std::floor(value + 0.5f);
  }
  
