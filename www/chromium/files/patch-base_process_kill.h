@@ -1,6 +1,7 @@
---- base/process/kill.h.orig	2021-04-14 18:40:48 UTC
+Index: base/process/kill.h
+--- base/process/kill.h.orig
 +++ base/process/kill.h
-@@ -113,11 +113,11 @@ BASE_EXPORT TerminationStatus GetTerminationStatus(Pro
+@@ -112,7 +112,7 @@ BASE_EXPORT TerminationStatus GetTerminationStatus(Pro
  BASE_EXPORT TerminationStatus GetKnownDeadTerminationStatus(
      ProcessHandle handle, int* exit_code);
  
@@ -9,8 +10,3 @@
  // Spawns a thread to wait asynchronously for the child |process| to exit
  // and then reaps it.
  BASE_EXPORT void EnsureProcessGetsReaped(Process process);
--#endif  // defined(OS_LINUX) || defined(OS_CHROMEOS)
-+#endif  // defined(OS_LINUX) || defined(OS_CHROMEOS) || defined(OS_BSD)
- #endif  // defined(OS_POSIX)
- 
- // Registers |process| to be asynchronously monitored for termination, forcibly

@@ -1,6 +1,7 @@
---- chrome/browser/defaults.cc.orig	2021-04-14 18:40:53 UTC
+Index: chrome/browser/defaults.cc
+--- chrome/browser/defaults.cc.orig
 +++ chrome/browser/defaults.cc
-@@ -46,7 +46,7 @@ const bool kSyncAutoStarts = false;
+@@ -50,7 +50,7 @@ const bool kSyncAutoStarts = false;
  
  // TODO(crbug.com/1052397): Revisit the macro expression once build flag switch
  // of lacros-chrome is complete.

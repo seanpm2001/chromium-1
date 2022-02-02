@@ -1,4 +1,5 @@
---- tools/gn/src/gn/version.h.orig	2021-09-14 02:05:25 UTC
+Index: tools/gn/src/gn/version.h
+--- tools/gn/src/gn/version.h.orig
 +++ tools/gn/src/gn/version.h
 @@ -22,9 +22,9 @@ class Version {
  

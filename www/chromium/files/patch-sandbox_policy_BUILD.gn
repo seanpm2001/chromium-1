@@ -1,6 +1,7 @@
---- sandbox/policy/BUILD.gn.orig	2021-09-24 04:26:09 UTC
+Index: sandbox/policy/BUILD.gn
+--- sandbox/policy/BUILD.gn.orig
 +++ sandbox/policy/BUILD.gn
-@@ -34,7 +34,7 @@ component("policy") {
+@@ -35,7 +35,7 @@ component("policy") {
      "//sandbox/policy/mojom",
    ]
    public_deps = []
@@ -9,16 +10,26 @@
      sources += [
        "linux/bpf_audio_policy_linux.cc",
        "linux/bpf_audio_policy_linux.h",
-@@ -83,6 +83,15 @@ component("policy") {
+@@ -88,6 +88,25 @@ component("policy") {
        "//sandbox/linux:sandbox_services",
        "//sandbox/linux:seccomp_bpf",
        "//sandbox/linux:suid_sandbox_client",
 +    ]
 +  }
-+  if (is_bsd) {
++  if (is_openbsd) {
 +    sources += [
-+      "freebsd/sandbox_freebsd.h",
++      "openbsd/sandbox_openbsd.cc",
++      "openbsd/sandbox_openbsd.h",
++    ]
++    deps += [
++      "//sandbox:sandbox_buildflags",
++    ]
++    libs = [ "util" ]
++  }
++  if (is_freebsd) {
++    sources += [
 +      "freebsd/sandbox_freebsd.cc",
++      "freebsd/sandbox_freebsd.h",
 +    ]
 +    deps += [
 +      "//sandbox:sandbox_buildflags",

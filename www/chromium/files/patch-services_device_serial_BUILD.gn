@@ -1,11 +1,17 @@
---- services/device/serial/BUILD.gn.orig	2021-04-14 18:41:08 UTC
+Index: services/device/serial/BUILD.gn
+--- services/device/serial/BUILD.gn.orig
 +++ services/device/serial/BUILD.gn
-@@ -5,7 +5,7 @@
- import("//build/config/chromeos/ui_mode.gni")
- import("//build/config/features.gni")
+@@ -83,6 +83,13 @@ if (is_win || ((is_linux || is_chromeos) && use_udev) 
+       ]
+     }
  
--if (is_win || ((is_linux || is_chromeos) && use_udev) || is_mac) {
-+if (is_win || ((is_linux || is_chromeos) && use_udev) || is_mac || is_bsd) {
-   config("platform_support") {
-     visibility = [ ":serial" ]
-     if (is_win) {
++    if (is_bsd) {
++      sources -= [
++        "serial_device_enumerator_linux.cc",
++        "serial_device_enumerator_linux.h"
++      ]
++    }
++
+     if (use_udev) {
+       deps += [ "//device/udev_linux" ]
+     }

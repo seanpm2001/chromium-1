@@ -1,13 +1,19 @@
---- v8/src/base/platform/platform-freebsd.cc.orig	2021-04-14 18:43:14 UTC
+Index: v8/src/base/platform/platform-freebsd.cc
+--- v8/src/base/platform/platform-freebsd.cc.orig
 +++ v8/src/base/platform/platform-freebsd.cc
-@@ -82,8 +82,8 @@ std::vector<OS::SharedLibraryAddress> OS::GetSharedLib
-             lib_name = std::string(path);
-           }
-           result.push_back(SharedLibraryAddress(
--              lib_name, reinterpret_cast<uintptr_t>(map->kve_start),
--              reinterpret_cast<uintptr_t>(map->kve_end)));
-+              lib_name, static_cast<uintptr_t>(map->kve_start),
-+              static_cast<uintptr_t>(map->kve_end)));
-         }
+@@ -43,14 +43,10 @@ TimezoneCache* OS::CreateTimezoneCache() {
+   return new PosixDefaultTimezoneCache();
+ }
  
-         start += ssize;
+-static unsigned StringToLong(char* buffer) {
+-  return static_cast<unsigned>(strtol(buffer, nullptr, 16));
+-}
+-
+ std::vector<OS::SharedLibraryAddress> OS::GetSharedLibraryAddresses() {
+   std::vector<SharedLibraryAddress> result;
+   int mib[4] = {CTL_KERN, KERN_PROC, KERN_PROC_VMMAP, getpid()};
+-  size_t miblen = sizeof(mib) / sizeof(mib[0]);
++  unsigned int miblen = sizeof(mib) / sizeof(mib[0]);
+   size_t buffer_size;
+   if (sysctl(mib, miblen, nullptr, &buffer_size, nullptr, 0) == 0) {
+     // Overallocate the buffer by 1/3 to account for concurrent
