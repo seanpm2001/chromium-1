@@ -1,5 +1,4 @@
-Index: ui/views/widget/widget.cc
---- ui/views/widget/widget.cc.orig
+--- ui/views/widget/widget.cc.orig	2022-02-07 13:39:41 UTC
 +++ ui/views/widget/widget.cc
 @@ -50,7 +50,7 @@
  #include "ui/views/window/custom_frame_view.h"

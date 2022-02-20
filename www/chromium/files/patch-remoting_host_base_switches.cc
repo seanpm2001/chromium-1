@@ -1,5 +1,4 @@
-Index: remoting/host/base/switches.cc
---- remoting/host/base/switches.cc.orig
+--- remoting/host/base/switches.cc.orig	2022-02-07 13:39:41 UTC
 +++ remoting/host/base/switches.cc
 @@ -23,7 +23,7 @@ const char kProcessTypeEvaluateCapability[] = "evaluat
  const char kProcessTypeFileChooser[] = "file_chooser";

@@ -1,5 +1,4 @@
-Index: base/time/time.cc
---- base/time/time.cc.orig
+--- base/time/time.cc.orig	2022-02-07 13:39:41 UTC
 +++ base/time/time.cc
 @@ -4,7 +4,7 @@
  

@@ -1,5 +1,4 @@
-Index: net/dns/public/BUILD.gn
---- net/dns/public/BUILD.gn.orig
+--- net/dns/public/BUILD.gn.orig	2021-12-17 14:33:52 UTC
 +++ net/dns/public/BUILD.gn
 @@ -37,7 +37,7 @@ source_set("public") {
      "util.h",

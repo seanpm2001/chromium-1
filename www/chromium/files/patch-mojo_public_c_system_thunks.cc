@@ -1,5 +1,4 @@
-Index: mojo/public/c/system/thunks.cc
---- mojo/public/c/system/thunks.cc.orig
+--- mojo/public/c/system/thunks.cc.orig	2022-02-07 13:39:41 UTC
 +++ mojo/public/c/system/thunks.cc
 @@ -19,7 +19,7 @@
  #include "mojo/public/c/system/core.h"

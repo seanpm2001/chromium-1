@@ -1,5 +1,4 @@
-Index: sandbox/policy/switches.cc
---- sandbox/policy/switches.cc.orig
+--- sandbox/policy/switches.cc.orig	2022-02-07 13:39:41 UTC
 +++ sandbox/policy/switches.cc
 @@ -94,7 +94,9 @@ const char kGpuSandboxFailuresFatal[] = "gpu-sandbox-f
  // Meant to be used as a browser-level switch for testing purposes only.

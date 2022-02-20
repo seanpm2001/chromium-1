@@ -1,5 +1,4 @@
-Index: v8/src/compiler/backend/ia32/instruction-selector-ia32.cc
---- v8/src/compiler/backend/ia32/instruction-selector-ia32.cc.orig
+--- v8/src/compiler/backend/ia32/instruction-selector-ia32.cc.orig	2022-02-07 13:39:41 UTC
 +++ v8/src/compiler/backend/ia32/instruction-selector-ia32.cc
 @@ -3019,6 +3019,7 @@ void InstructionSelector::VisitI8x16Shuffle(Node* node
    Emit(opcode, 1, &dst, input_count, inputs, temp_count, temps);

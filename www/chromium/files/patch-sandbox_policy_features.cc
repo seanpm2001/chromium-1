@@ -1,5 +1,4 @@
-Index: sandbox/policy/features.cc
---- sandbox/policy/features.cc.orig
+--- sandbox/policy/features.cc.orig	2022-02-07 13:39:41 UTC
 +++ sandbox/policy/features.cc
 @@ -16,7 +16,11 @@ namespace features {
  // Enables network service sandbox.

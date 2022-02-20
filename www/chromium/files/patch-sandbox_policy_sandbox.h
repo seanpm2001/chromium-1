@@ -1,5 +1,4 @@
-Index: sandbox/policy/sandbox.h
---- sandbox/policy/sandbox.h.orig
+--- sandbox/policy/sandbox.h.orig	2022-02-07 13:39:41 UTC
 +++ sandbox/policy/sandbox.h
 @@ -12,6 +12,10 @@
  #include "sandbox/policy/linux/sandbox_linux.h"

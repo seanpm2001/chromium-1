@@ -1,7 +1,7 @@
 # Created by: Florent Thoumie <flz@FreeBSD.org>
 
 PORTNAME=	chromium
-PORTVERSION=	98.0.4758.80
+PORTVERSION=	98.0.4758.102
 CATEGORIES=	www
 MASTER_SITES=	https://commondatastorage.googleapis.com/chromium-browser-official/ \
 		LOCAL/rene/chromium/:fonts
@@ -14,7 +14,6 @@ LICENSE=	BSD3CLAUSE LGPL21 MPL11
 LICENSE_COMB=	multi
 
 ONLY_FOR_ARCHS=			aarch64 amd64 i386
-BROKEN_i386=	Does not compile, __ElfN macros unknown
 
 BUILD_DEPENDS=	bash:shells/bash \
 		${PYTHON_PKGNAMEPREFIX}Jinja2>0:devel/py-Jinja2@${PY_FLAVOR} \
@@ -72,7 +71,7 @@ USES=		bison compiler:c++17-lang cpe desktop-file-utils dos2unix gl gnome jpeg l
 
 CPE_VENDOR=	google
 CPE_PRODUCT=	chrome
-DOS2UNIX_FILES=	third_party/skia/third_party/vulkanmemoryallocator/include/vk_mem_alloc.h
+DOS2UNIX_FILES=	third_party/vulkan_memory_allocator/include/vk_mem_alloc.h
 USE_GL=		gbm gl
 USE_GNOME=	atk dconf gdkpixbuf2 glib20 gtk30 libxml2 libxslt
 USE_LDCONFIG=	${DATADIR}

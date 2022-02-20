@@ -1,5 +1,4 @@
-Index: base/process/kill.h
---- base/process/kill.h.orig
+--- base/process/kill.h.orig	2022-02-07 13:39:41 UTC
 +++ base/process/kill.h
 @@ -112,7 +112,7 @@ BASE_EXPORT TerminationStatus GetTerminationStatus(Pro
  BASE_EXPORT TerminationStatus GetKnownDeadTerminationStatus(

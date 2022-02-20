@@ -1,5 +1,4 @@
-Index: components/neterror/resources/neterror.js
---- components/neterror/resources/neterror.js.orig
+--- components/neterror/resources/neterror.js.orig	2021-12-14 11:45:03 UTC
 +++ components/neterror/resources/neterror.js
 @@ -129,7 +129,7 @@ function detailsButtonClick() {
  }

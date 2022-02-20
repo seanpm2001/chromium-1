@@ -1,5 +1,4 @@
-Index: chrome/updater/configurator.cc
---- chrome/updater/configurator.cc.orig
+--- chrome/updater/configurator.cc.orig	2022-02-07 13:39:41 UTC
 +++ chrome/updater/configurator.cc
 @@ -30,7 +30,7 @@
  #include "chrome/updater/win/net/network.h"

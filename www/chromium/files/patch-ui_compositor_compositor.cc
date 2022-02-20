@@ -1,5 +1,4 @@
-Index: ui/compositor/compositor.cc
---- ui/compositor/compositor.cc.orig
+--- ui/compositor/compositor.cc.orig	2022-02-07 13:39:41 UTC
 +++ ui/compositor/compositor.cc
 @@ -839,7 +839,7 @@ void Compositor::OnResume() {
  

@@ -1,5 +1,4 @@
-Index: ui/views/controls/textfield/textfield.h
---- ui/views/controls/textfield/textfield.h.orig
+--- ui/views/controls/textfield/textfield.h.orig	2022-02-07 13:39:41 UTC
 +++ ui/views/controls/textfield/textfield.h
 @@ -443,7 +443,7 @@ class VIEWS_EXPORT Textfield : public View,
    // Set whether the text should be used to improve typing suggestions.

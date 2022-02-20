@@ -1,5 +1,4 @@
-Index: v8/tools/run.py
---- v8/tools/run.py.orig
+--- v8/tools/run.py.orig	2022-02-07 13:39:41 UTC
 +++ v8/tools/run.py
 @@ -11,7 +11,7 @@ from __future__ import print_function
  import subprocess

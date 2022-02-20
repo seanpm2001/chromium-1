@@ -1,5 +1,4 @@
-Index: ui/gfx/switches.h
---- ui/gfx/switches.h.orig
+--- ui/gfx/switches.h.orig	2022-01-21 13:40:09 UTC
 +++ ui/gfx/switches.h
 @@ -17,7 +17,7 @@ GFX_SWITCHES_EXPORT extern const char kEnableNativeGpu
  GFX_SWITCHES_EXPORT extern const char kForcePrefersReducedMotion[];

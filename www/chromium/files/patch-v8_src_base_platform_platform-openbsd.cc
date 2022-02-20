@@ -1,5 +1,4 @@
-Index: v8/src/base/platform/platform-openbsd.cc
---- v8/src/base/platform/platform-openbsd.cc.orig
+--- v8/src/base/platform/platform-openbsd.cc.orig	2022-02-07 13:39:41 UTC
 +++ v8/src/base/platform/platform-openbsd.cc
 @@ -6,6 +6,7 @@
  // POSIX-compatible parts, the implementation is in platform-posix.cc.

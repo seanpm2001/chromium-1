@@ -1,5 +1,4 @@
-Index: v8/src/base/sys-info.cc
---- v8/src/base/sys-info.cc.orig
+--- v8/src/base/sys-info.cc.orig	2022-02-07 13:39:41 UTC
 +++ v8/src/base/sys-info.cc
 @@ -38,7 +38,7 @@ namespace base {
  // static

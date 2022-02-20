@@ -1,5 +1,4 @@
-Index: base/process/launch.h
---- base/process/launch.h.orig
+--- base/process/launch.h.orig	2022-02-07 13:39:41 UTC
 +++ base/process/launch.h
 @@ -192,7 +192,7 @@ struct BASE_EXPORT LaunchOptions {
    bool clear_environment = false;

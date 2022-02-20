@@ -1,5 +1,4 @@
-Index: chrome/browser/resources/settings/route.ts
---- chrome/browser/resources/settings/route.ts.orig
+--- chrome/browser/resources/settings/route.ts.orig	2022-02-07 13:39:41 UTC
 +++ chrome/browser/resources/settings/route.ts
 @@ -177,7 +177,7 @@ function createBrowserSettingsRoutes(): SettingsRoutes
  

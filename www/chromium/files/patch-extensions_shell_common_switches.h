@@ -1,5 +1,4 @@
-Index: extensions/shell/common/switches.h
---- extensions/shell/common/switches.h.orig
+--- extensions/shell/common/switches.h.orig	2022-02-07 13:39:41 UTC
 +++ extensions/shell/common/switches.h
 @@ -20,7 +20,7 @@ extern const char kAppShellPreferredNetwork[];
  #endif

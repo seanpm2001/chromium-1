@@ -1,5 +1,4 @@
-Index: components/viz/common/features.cc
---- components/viz/common/features.cc.orig
+--- components/viz/common/features.cc.orig	2022-02-07 13:39:41 UTC
 +++ components/viz/common/features.cc
 @@ -58,7 +58,7 @@ const base::Feature kSimpleFrameRateThrottling{
  const base::Feature kUseSkiaRenderer {

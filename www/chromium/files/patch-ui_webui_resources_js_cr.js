@@ -1,5 +1,4 @@
-Index: ui/webui/resources/js/cr.js
---- ui/webui/resources/js/cr.js.orig
+--- ui/webui/resources/js/cr.js.orig	2022-02-07 13:39:41 UTC
 +++ ui/webui/resources/js/cr.js
 @@ -441,6 +441,11 @@ var cr = cr || function(global) {
        return returnValue;

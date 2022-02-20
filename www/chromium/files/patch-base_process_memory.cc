@@ -1,5 +1,4 @@
-Index: base/process/memory.cc
---- base/process/memory.cc.orig
+--- base/process/memory.cc.orig	2022-02-07 13:39:41 UTC
 +++ base/process/memory.cc
 @@ -63,14 +63,16 @@ NOINLINE void OnNoMemoryInternal(size_t size) {
  

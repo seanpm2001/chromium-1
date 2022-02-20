@@ -1,5 +1,4 @@
-Index: chrome/browser/defaults.cc
---- chrome/browser/defaults.cc.orig
+--- chrome/browser/defaults.cc.orig	2021-12-14 11:44:58 UTC
 +++ chrome/browser/defaults.cc
 @@ -50,7 +50,7 @@ const bool kSyncAutoStarts = false;
  

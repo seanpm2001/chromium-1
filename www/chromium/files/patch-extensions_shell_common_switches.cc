@@ -1,5 +1,4 @@
-Index: extensions/shell/common/switches.cc
---- extensions/shell/common/switches.cc.orig
+--- extensions/shell/common/switches.cc.orig	2022-02-07 13:39:41 UTC
 +++ extensions/shell/common/switches.cc
 @@ -22,7 +22,7 @@ const char kAppShellPreferredNetwork[] = "app-shell-pr
  

@@ -1,5 +1,4 @@
-Index: ui/compositor/compositor.h
---- ui/compositor/compositor.h.orig
+--- ui/compositor/compositor.h.orig	2022-02-07 13:39:41 UTC
 +++ ui/compositor/compositor.h
 @@ -388,7 +388,7 @@ class COMPOSITOR_EXPORT Compositor : public base::Powe
  

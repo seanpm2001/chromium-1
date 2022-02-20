@@ -1,5 +1,4 @@
-Index: chrome/updater/updater.cc
---- chrome/updater/updater.cc.orig
+--- chrome/updater/updater.cc.orig	2022-02-07 13:39:41 UTC
 +++ chrome/updater/updater.cc
 @@ -38,7 +38,7 @@
  #include "chrome/updater/win/win_util.h"

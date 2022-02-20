@@ -1,5 +1,4 @@
-Index: remoting/host/base/switches.h
---- remoting/host/base/switches.h.orig
+--- remoting/host/base/switches.h.orig	2022-02-07 13:39:41 UTC
 +++ remoting/host/base/switches.h
 @@ -35,7 +35,7 @@ extern const char kProcessTypeRdpDesktopSession[];
  extern const char kProcessTypeEvaluateCapability[];

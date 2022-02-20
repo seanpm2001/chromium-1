@@ -1,5 +1,4 @@
-Index: device/fido/features.cc
---- device/fido/features.cc.orig
+--- device/fido/features.cc.orig	2021-12-31 00:57:33 UTC
 +++ device/fido/features.cc
 @@ -26,7 +26,7 @@ extern const base::Feature kWebAuthCableServerLink {
  // TODO(crbug.com/1052397): Revisit the macro expression once build flag switch

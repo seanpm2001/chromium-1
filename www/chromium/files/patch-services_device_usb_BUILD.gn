@@ -1,5 +1,4 @@
-Index: services/device/usb/BUILD.gn
---- services/device/usb/BUILD.gn.orig
+--- services/device/usb/BUILD.gn.orig	2022-02-07 13:39:41 UTC
 +++ services/device/usb/BUILD.gn
 @@ -102,15 +102,17 @@ static_library("usb") {
      deps += [ "//third_party/re2" ]
